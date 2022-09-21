@@ -20,10 +20,15 @@ const Countries = () => {
                 >
                 </Country>)
            } */}
-           {
-            countries.map(country => 
-            <Country country={country}></Country>)
-           }
+            <div className='countries-container'>
+                {
+                   countries.map(country => 
+                   <Country 
+                   country={country} 
+                   key={country.alpha3Code}//warning na pouyar jnnno
+                   ></Country>)
+                }
+            </div>
         </div>
     );
 };

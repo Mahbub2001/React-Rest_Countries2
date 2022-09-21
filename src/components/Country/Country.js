@@ -2,11 +2,12 @@ import React from "react";
 import "./Country.css";
 const Country = (props) => {
     //advance way
-    const {area,region,population,name,capital} = props.country;
+    const {area,region,population,name,capital,flags} = props.country;
   return (
     <div className="country">
+      <img src={flags.png} alt="" />
       <h2>Country Name : {name} </h2>
-      <p>capital Name : {capital}</p>
+      <p>Capital Name : {capital}</p>
       <p>Population : {population}</p>
       <p>Area : {area} sq.km</p>
       <p>Region : {region} </p>
